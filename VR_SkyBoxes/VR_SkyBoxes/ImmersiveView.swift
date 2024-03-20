@@ -40,7 +40,9 @@ struct ImmersiveView: View {
     guard let skyBoxTexture = try? TextureResource.load(named: "forest") else {
       return nil
     }
-    skyBoxMaterial.color = .init(texture: .init(skyBoxTexture))
+    skyBoxMaterial.color = .init(
+      texture: .init(skyBoxTexture)
+    )
 
     // Entity
     let skyBoxEntity = Entity()
