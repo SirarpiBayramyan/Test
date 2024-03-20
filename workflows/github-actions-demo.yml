@@ -16,3 +16,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      name: iOS Build Action      
+      uses: yukiarrr/ios-build-action@v1.11.2
+
+
+            
