@@ -25,7 +25,9 @@ struct VR_SkyBoxesApp: App {
       SkyBoxControlsView()
         .environmentObject(skyBoxSettings)
     }
-    .defaultSize(CGSize(width: 30, height: 30))
+    .defaultSize(
+      CGSize(width: 30, height: 30)
+    )
   }
 }
 
