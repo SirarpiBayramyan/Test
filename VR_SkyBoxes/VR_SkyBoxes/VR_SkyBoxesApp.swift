@@ -16,7 +16,10 @@ struct VR_SkyBoxesApp: App {
     ImmersiveSpace(id: "ImmersiveSpace") {
       ImmersiveView()
         .environmentObject(skyBoxSettings)
-    }.immersionStyle(selection: .constant(.full), in: .full)
+    }.immersionStyle(
+      selection: .constant(.full),
+      in: .full
+    )
 
     WindowGroup(id: "SkyBoxControls") {
       SkyBoxControlsView()
